@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #181818;
+}
+
+h1{font-size: 3.5em;}
+h2{ font-size: 2.7em}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{ list-style: none;}
+
+button{
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #4BB0DA;
+    background-color: #262626;
+    color: white; 
+}
+
+button:hover{
+    background-color: #726CEE;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #413b3b;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.20), 
+        rgba(0,0,0,0.5)
+     )
+    ,url(../images/icon-arrow-up.svg);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 2em;
+    color: #8E4CB6;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(218, 211, 211);
+}
+
+header a:hover{
+    color: #726CEE;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background-image:linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5), 
+       rgba(0,0,0,0.5)
+    )
+    ,url(../images/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Vynilics-compras{
+    text-align: center;
+    padding: 120px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.20)
+     )
+    ,url(../images/icon-arrow-down.svg);
+}
+
+#Vynilics-ventajas{
+    text-align: center;
+
+}
+
+#Vynilics-ventajas .container{
+    padding: 50px 0px;  
+
+}
+
+#Vynilics-ventajas h2{
+    margin-top: 0;
+    color: #8E4CB6;
+}
+
+#Vynilics-ventajas p{
+    display: none;
+}
+
+#Vynilics-ventajas .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px ;
+    margin: 30px;
+    border-radius: 15px;
+    
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5), 
+       rgba(0,0,0,0.5)
+    )
+    ,url(../images/seguridad.png);
+
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5), 
+       rgba(0,0,0,0.5)
+    )
+    ,url(../images/seguridad.jpg);
+
+}
+
+.carta:last-child{
+    background-image:linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5), 
+       rgba(0,0,0,0.5)
+    )
+    ,url(../images/vynil.jpg);
+    
+}
+
+footer{
+    margin-left: 3rem;
+}
+.social-icon {
+    font-size: 50px; 
+    color: #000; 
+  }
+  
+  .social-icon:hover {
+    color: #E0CA2D; 
+  }
+
+@media (min-width: 700px) {
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero {
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+         )
+         ,url(../images/image-hero-desktop.png);
+        height: 100vh;
+    }
+
+    #Vynilics-ventajas .cartas{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #Vynilics-ventajas p{
+       display: block; 
+       margin-bottom: 30px;
+    }
+
+    #Vynilics-ventajas h3{
+        margin-top: 0;
+
+    }
+
+    #Vynilics-ventajas .carta{
+        padding: 15px;
+        
+    }
+}
+
+
+
+
+    
+
+    
+
+
